@@ -1,0 +1,37 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    
+}
+.search-itens{
+    text-align: center;
+}
+p{
+    color: #8CB04E;
+font-size: 18px;
+}
+#search {
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #5C452D;
+    background: #E1DFB6;
+    padding-left: 10px;
+    margin: 5px;
+}
+textarea::placeholder { 
+    opacity: 0.5;
+}
+input::placeholder{
+    opacity: 0.5;
+}
+
+#Enviar {
+    width: 80px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #5C452D;
+    background: #8CB04E;
+}

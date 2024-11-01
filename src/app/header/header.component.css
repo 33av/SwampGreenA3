@@ -1,0 +1,57 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+.header-container {
+    background-color: #5C452D;
+    color: #8CB04E;
+    font-family: Shrek;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 100vw;
+    height: 107px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+
+}
+
+.sub-titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: flex-end;
+}
+
+li {
+    padding-bottom: 10px;
+    color: #8CB04E;
+
+}
+
+#titulo {
+    align-self: flex-start;
+    padding: 20px 0px;
+    /* background-image: url('src\assets\img\recicla1.png') 116px 2px/ cover no-repeat; */
+    background-size: 90px;
+}
+
+#titulo a:link {
+    color: #8CB04E;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 10px #E1DFB6;
+}
+
+#titulo a:visited {
+    color: #8CB04E;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 ,#0000 0 10px #E1DFB6;
+}
+
+.active-link {
+    color: #C5EE7D;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 10px #E1DFB6,0 0 20px #E1DFB6,0 0 30px #E1DFB6;
+}

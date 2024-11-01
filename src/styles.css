@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Shrek';
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.8px;
+
+}
+body {
+    background-color: #C5EE7D;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Shrek';
+    src: url('../fonts/SHREK___.TTF');
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pesquisa {
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #5C452D;
+    background: #E1DFB6;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+#Enviar {
+    width: 80px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #5C452D;
+    background: #8CB04E;
+
+}
+
+.img-button {
+    max-width: 60%;
+}
+
