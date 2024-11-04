@@ -3,8 +3,8 @@
         <a href="/home">
             <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
         </a>
-        <a href="/about" >
-            <li [class.active-link]="isActive('/about')" routerLink="/about" >About</li>
+        <a href="/about">
+            <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
         </a>
         <a href="/tips">
             <li [class.active-link]="isActive('/tips')" routerLink="/tips">Tips</li>
@@ -17,7 +17,17 @@
             <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
         </a>
     </ul>
+    <div class="login">
+        <a href="/login">
+            <img src="../../assets/img/login-icon.png" alt="Login Image" class="login-icon">
+            <button class="login-button">
+                Login
+            </button>
+        </a>
+    </div>
+
 </div>
+
 
 <!-- <div class="header-container">
     <div class="sub-titulos">

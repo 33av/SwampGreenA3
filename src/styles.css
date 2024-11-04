@@ -6,6 +6,7 @@
     letter-spacing: 0.8px;
 
 }
+
 body {
     background-color: #C5EE7D;
     height: 100vh;
@@ -58,4 +59,20 @@ main {
 .img-button {
     max-width: 60%;
 }
+.erro404{
+    display: none;
+}
 
+@media (max-width: 900px) {
+    .erro404 {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background: black url('../../img/shrekSegurandoSuculenta.jpg') no-repeat center / contain;
+        color: white;
+        text-align: center;
+    }
+    app-root{
+        display: none;
+    }
+}
