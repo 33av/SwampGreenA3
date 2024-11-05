@@ -18,8 +18,8 @@ main {
 }
 
 .container {
-    width: 60%;
-    height: auto;
+    width: 60vw;
+    height: 60vh;
     display: flex;
     align-items: stretch;
     border-radius: 16px;
@@ -44,7 +44,7 @@ main {
 }
 
 .left-panel h2 {
-    font-size: 18px;
+    font-size: clamp(12px, 0.5vw + 0.7rem, 36px);
     margin-bottom: 20px;
 }
 
@@ -53,11 +53,13 @@ main {
     border: 1px solid #fff;
     color: #5C452D;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
     width: 90%;
+    height: 8vh;
     transition: background-color 0.3s;
+    font-size: clamp(10px, 1vw + 0.1rem, 50px);
 }
 
 .container button:hover {
@@ -76,6 +78,7 @@ main {
     color: #5c8f25;
     margin-bottom: 20px;
     text-align: center;
+    font-size: clamp(10px, 0.5vw + 1rem, 50px);
 }
 
 .form-group {
@@ -89,7 +92,7 @@ main {
 }
 
 .form-group img {
-    width: 20px;
+    width: 1.5vw;
     margin-right: 10px;
 }
 
@@ -99,11 +102,12 @@ main {
     outline: none;
     flex: 1;
     font-family: 'Roboto', Bold;
+    font-size: clamp(10px, 0.5vw + 0.4rem, 36px);
 }
 
 .button-submit {
     width: 60%;
-    height: 50px;
+    height: 7svh;
     padding: 10px;
     background-color: #7b9b3e;
     color: white;
@@ -111,42 +115,35 @@ main {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 12px;
+    font-size: clamp(10px, 0.5vw + 0.4rem, 24px);
     margin-top: 10px;
     transition: background-color 0.3s;
     display: flex;
-    /* Usar flexbox para melhor controle do layout */
     align-items: center;
     justify-content: center;
-    /* Centraliza horizontalmente */
     position: relative;
 }
 
 .button-submit img {
     width: auto;
-    /* Largura automática para manter a proporção */
     height: 100%;
-    /* Altura da imagem em relação ao botão */
     margin-right: 10px;
-    /* Espaço entre a imagem e o texto */
     object-fit: contain;
 }
 
 .button-submit span {
     flex: 1;
-    /* Faz o texto ocupar o espaço restante */
     text-align: center;
-    /* Centraliza o texto horizontalmente */
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 4vh;
     color: #7b9b3e;
     padding: 25px 0;
     text-align: center;
     margin: 20px 0;
     background: url('../../assets/img/recicla.svg') center no-repeat;
-    background-size: 130px;
+    background-size: 20%;
     filter: drop-shadow(67px 24px 19.2px rgba(122, 146, 68, 0.50));
 }
 
