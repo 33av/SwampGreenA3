@@ -1,4 +1,4 @@
-/* meu codigo 
+/* otimizado pelo gpt para reduzir o tamanho e unir estilos repetidos */
 * {
     margin: 0;
     padding: 0;
@@ -7,82 +7,69 @@
     letter-spacing: 3px;
 }
 
+body,
 main {
     display: flex;
     align-items: center;
-    height: 100vh;
-    background-color: #E1DFB6;
-    flex-direction: column;
     justify-content: flex-start;
-
-}
-
-img {
-    opacity: 0.30;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background-color: #e1dfb6;
+    flex-direction: column;
 }
 
 .container {
     width: 60%;
-    height: 60%;
+    height: auto;
     display: flex;
     align-items: stretch;
     border-radius: 16px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.left-panel,
+.right-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
 .left-panel {
     width: 30%;
-    border-radius: 16px 0 0 16px;
     background-color: #7A9244;
-    padding: 20px;
-    color: #fff;
+    border-radius: 16px 0 0 16px;
+    color: #E1DFB6;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .left-panel h2 {
-    margin-bottom: 20px;
     font-size: 18px;
-    color: #E1DFB6;
+    margin-bottom: 20px;
 }
 
 .left-panel button {
     background-color: #7A9244;
-    border-color: white;
-    border-style: solid;
+    border: 1px solid #fff;
+    color: #5C452D;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     width: 90%;
-    color: #5C452D;
+    transition: background-color 0.3s;
 }
 
-.left-panel button:hover {
+.container button:hover {
     background-color: #e1dfb6;
+    color: black;
 }
 
 .right-panel {
     width: 70%;
-    border-radius: 0 16px 16px 0;
     background-color: #c5ee7d;
+    border-radius: 0 16px 16px 0;
     padding: 40px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .right-panel h2 {
@@ -96,8 +83,8 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border: 1px solid #5C452D;
     padding: 10px;
+    border: 1px solid #5C452D;
     background-color: #e4f5b2;
 }
 
@@ -114,8 +101,9 @@ body {
     font-family: 'Roboto', Bold;
 }
 
-.register-button {
-    width: 100%;
+.button-submit {
+    width: 60%;
+    height: 50px;
     padding: 10px;
     background-color: #7b9b3e;
     color: white;
@@ -123,24 +111,43 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 12px;
     margin-top: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    /* Usar flexbox para melhor controle do layout */
+    align-items: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    position: relative;
 }
 
-.register-button:hover {
-    background-color: #6d8a36;
+.button-submit img {
+    width: auto;
+    /* Largura automática para manter a proporção */
+    height: 100%;
+    /* Altura da imagem em relação ao botão */
+    margin-right: 10px;
+    /* Espaço entre a imagem e o texto */
+    object-fit: contain;
+}
+
+.button-submit span {
+    flex: 1;
+    /* Faz o texto ocupar o espaço restante */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
 }
 
 .logo {
-    text-align: center;
     font-size: 2rem;
     color: #7b9b3e;
     padding: 25px 0;
-    background-image: url('../../assets/img/recicla.svg');
-    background-position: center;
-    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px 0;
+    background: url('../../assets/img/recicla.svg') center no-repeat;
     background-size: 130px;
     filter: drop-shadow(67px 24px 19.2px rgba(122, 146, 68, 0.50));
-    margin: 20px 0;
 }
 
 .logo h1 {
@@ -180,4 +187,26 @@ body {
 .return:hover .text-return {
     visibility: visible;
     opacity: 1;
-} */
+}
+
+.form-group img {
+    opacity: 60%;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.or-container span {
+    padding: 0 10px;
+}
