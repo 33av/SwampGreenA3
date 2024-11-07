@@ -1,29 +1,39 @@
 <main>
-    <div class="logo"><h1>Swamp Green</h1></div>
+    <div class="logo">
+        <h1>Swamp Green</h1>
+    </div>
     <div class="container">
         <div class="left-panel">
-            <h2>Bem Vindo de Volta</h2>
-            <button>Login</button>
+            <h2>Crie sua Conta</h2>
+            <button (click)="navigateToDestino()" class="button-navigate">Sign Up</button>
         </div>
         <div class="right-panel">
-            <h2>Crie sua conta</h2>
+            <h2>Entrar</h2>
             <div class="form-group">
-                <img src="../../assets/img/login-icon.png" alt="User Icon">
+                <img src="../../assets/img/icons/email-icon.png" alt="User Icon">
                 <input type="text" placeholder="Nome">
             </div>
             <div class="form-group">
-                <img src="../../assets/img/email-icon.svg" alt="Email Icon">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <img src="../../assets/img/senhaicon.svg" alt="Password Icon">
+                <img src="../../assets/img/icons/senha-icon.png" alt="Password Icon">
                 <input type="password" placeholder="Senha">
             </div>
-            <button class="register-button">Cadastrar</button>
+            <button class="button-submit">
+                <img src="../../assets/img/icons/login-icon.png " alt="User Icon">
+                <span>Log In</span>
+            </button>
+            <div class="or">
+                <div class="line"></div>
+                <span>Or</span>
+                <div class="line"></div>
+            </div>
+            <button class="button-submit">
+                <img src="../../assets/img/icons/instaLogo.png " alt="User Icon">
+                <span> with Instagram</span>
+            </button>
         </div>
     </div>
     <a href="/" class="return">
         &lt;&lt;&lt;
         <span class="text-return">Voltar</span>
-      </a>
+    </a>
 </main>
