@@ -68,7 +68,7 @@ main {
         display: block;
         width: 100vw;
         height: 100vh;
-        background: black url('../../img/shrekSegurandoSuculenta.jpg') no-repeat center / contain;
+        background: black url('../src/assets/img/shrekSegurandoSuculenta.jpg') no-repeat center / contain;
         color: white;
         text-align: center;
     }
