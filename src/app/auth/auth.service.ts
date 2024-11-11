@@ -15,10 +15,27 @@ export class AuthService {
       return;
     }
     localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
-    localStorage.setItem('userName',name)
-    alert('Cadastro realizado com sucesso!');
+  localStorage.setItem('password', password);
+  localStorage.setItem('userName', name);
+  this.setLoggedInUser(name);  // Definindo o nome como usuário logado
+  alert('Cadastro realizado com sucesso!');
+}
+
+setLoggedInUser(name: string) {
+  localStorage.setItem('loggedInUser', name);
+}
+
+clearLoggedInUser() {
+  localStorage.removeItem('loggedInUser');
+}
+
+getLoggedInUser(): string | null {
+  if (typeof window !== 'undefined') { // Verifica se está no ambiente do navegador
+    return localStorage.getItem('userName');
   }
+  return null;
+}
+
 
   login(email: string, password: string): boolean {
     const storedEmail = localStorage.getItem('email');
@@ -38,14 +55,14 @@ export class AuthService {
     return localStorage.getItem('email') === email;
   }
 
-  getLoggedInUser() {
-    // Verifique se o 'window' está disponível antes de acessar o localStorage
-    if (typeof window !== 'undefined' && window.localStorage) {
-      return localStorage.getItem('loggedInUser');
-    } else {
-      return null; // Ou outro valor adequado se não estiver disponível
-    }
-  }
+  // getLoggedInUser() {
+  //   // Verifique se o 'window' está disponível antes de acessar o localStorage
+  //   if (typeof window !== 'undefined' && window.localStorage) {
+  //     return localStorage.getItem('loggedInUser');
+  //   } else {
+  //     return null; // Ou outro valor adequado se não estiver disponível
+  //   }
+  // }
 
 
   isCPFValid(cpf: string): boolean {

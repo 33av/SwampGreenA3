@@ -1,33 +1,37 @@
 <div class="header-container">
     <ul class="sub-titulos">
-        <a href="/home">
-            <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
-        </a>
-        <a href="/about">
-            <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
-        </a>
-        <a href="/tips">
-            <li [class.active-link]="isActive('/tips')" routerLink="/tips">Tips</li>
-        </a>
-        <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
-        <a href="/awards">
-            <li [class.active-link]="isActive('/awards')" routerLink="/awards">Awards</li>
-        </a>
-        <a href="/donations">
-            <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
-        </a>
+      <a href="/home">
+        <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
+      </a>
+      <a href="/about">
+        <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
+      </a>
+      <a href="/tasks">
+        <li [class.active-link]="isActive('/tasks')" routerLink="/tasks">Tasks</li>
+      </a>
+      <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
+      <a href="/awards">
+        <li [class.active-link]="isActive('/awards')" routerLink="/awards">Awards</li>
+      </a>
+      <a href="/donations">
+        <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
+      </a>
     </ul>
     <div class="login">
+      <ng-container *ngIf="userName; else loginSection">
+        <span> {{ userName }}</span>
+      </ng-container>
+      <ng-template #loginSection>
         <a href="/login">
-            <img src="../../assets/img/login-icon.png" alt="Login Image" class="login-icon">
-            <button class="login-button">
-                Login
-            </button>
+          <img src="../../assets/img/login-icon.png" alt="Login Image" class="login-icon">
+          <button class="login-button">
+            Login
+          </button>
         </a>
+      </ng-template>
     </div>
-
-</div>
-
+  </div>
+  
 
 
 <!-- <div class="header-container">

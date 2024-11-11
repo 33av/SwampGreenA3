@@ -6,13 +6,13 @@ import { LoginPageComponent } from '../login-page/login-page.component'; // Impo
 
 @NgModule({
   declarations: [
-    LoginPageComponent, // Declare o LoginPageComponent aqui
+    // LoginPageComponent, // Declare o LoginPageComponent aqui
   ],
   imports: [
     CommonModule,
     FormsModule, // Adicione FormsModule aqui
   ],
   providers: [],
-  exports: [LoginPageComponent] // Se necessário, exporte o componente
+  // exports: [LoginPageComponent] // Se necessário, exporte o componente
 })
 export class AuthModule { }
