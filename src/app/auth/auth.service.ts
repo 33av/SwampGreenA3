@@ -21,6 +21,7 @@ export class AuthService {
   alert('Cadastro realizado com sucesso!');
 }
 
+
 setLoggedInUser(name: string) {
   localStorage.setItem('loggedInUser', name);
 }
@@ -55,16 +56,7 @@ getLoggedInUser(): string | null {
     return localStorage.getItem('email') === email;
   }
 
-  // getLoggedInUser() {
-  //   // Verifique se o 'window' está disponível antes de acessar o localStorage
-  //   if (typeof window !== 'undefined' && window.localStorage) {
-  //     return localStorage.getItem('loggedInUser');
-  //   } else {
-  //     return null; // Ou outro valor adequado se não estiver disponível
-  //   }
-  // }
-
-
+ 
   isCPFValid(cpf: string): boolean {
     const cpfPattern = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
     if (!cpf.match(cpfPattern)) {
