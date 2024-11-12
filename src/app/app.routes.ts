@@ -16,6 +16,7 @@ import { TipsPageComponent } from './tips-page/tips-page.component';
 import { AwardsPageComponent } from './awards-page/awards-page.component';
 import { DonationsPageComponent } from './donations-page/donations-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
 // Definição das rotas
 export const routes: Routes = [
@@ -24,7 +25,8 @@ export const routes: Routes = [
     { path: 'tips', component: TipsPageComponent },
     { path: 'awards', component: AwardsPageComponent },
     { path: 'donations', component: DonationsPageComponent },
-    { path: 'login', component: LoginPageComponent }
+    { path: 'login', component: LoginPageComponent },
+    { path: 'signup', component: SignUpPageComponent}
 ];
 
 // Módulo de Roteamento
