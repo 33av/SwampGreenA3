@@ -21,3 +21,13 @@ describe('SearchBarComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+function searchRecyclingCenters(): void {
+  const searchBar = document.getElementById('search-bar') as HTMLInputElement;
+  const query: string = searchBar.value.trim();
+  if (query) {
+      alert(`Buscando centros de reciclagem em: ${query}`);
+  } else {
+      alert("Por favor, digite uma cidade ou estado.");
+  }
+}

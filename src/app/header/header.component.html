@@ -1,39 +1,43 @@
 <div class="header-container">
     <ul class="sub-titulos">
-      <a href="/home">
-        <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
-      </a>
-      <a href="/about">
-        <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
-      </a>
-      <a href="/tasks">
-        <li [class.active-link]="isActive('/tasks')" routerLink="/tasks">Tasks</li>
-      </a>
-      <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
-      <a href="/awards">
-        <li [class.active-link]="isActive('/awards')" routerLink="/awards">Awards</li>
-      </a>
-      <a href="/donations">
-        <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
-      </a>
-    </ul>
-
-
-    <div class="login">
-      <ng-container *ngIf="userName; else loginSection">
-        <div class="user-profile">
-          <img src="../../assets/img/shrekperfil.jfif" alt="User Profile" class="profile-image">
-          <span class="user-name">{{ userName }}</span>
-        </div>
-      </ng-container>
-      <ng-template #loginSection>
-        <a href="/login">
-          <img src="../../assets/img/login-icon.png" alt="Login Image" class="login-icon">
-          <button class="login-button">Login</button>
+        <a href="/home">
+            <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
         </a>
-      </ng-template>
+        <a href="/about">
+            <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
+        </a>
+        <a href="/tips">
+            <li [class.active-link]="isActive('/tips')" routerLink="/tips">Tips</li>
+        </a>
+        <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
+        <a href="/awards">
+            <li [class.active-link]="isActive('/awards')" routerLink="/awards">Awards</li>
+        </a>
+        <a href="/donations">
+            <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
+        </a>
+    </ul>
+    <div class="login">
+        <a href="/login">
+            <img src="../../assets/img/login-icon.png" alt="Login Image" class="login-icon">
+            <button class="login-button">
+                Login
+            </button>
+        </a>
     </div>
 
+</div>
 
 
-
+<!-- <div class="header-container">
+    <div class="sub-titulos">
+        <button (click)="navigateToHome()">Go to Home</button>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/text">Text</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="/tips" routerLinkActive="active">Tips</a>
+        <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
+        <a routerLink="/awards" routerLinkActive="active">Awards</a>
+        <a routerLink="/donations" routerLinkActive="active">Donations</a>
+    </div>
+</div> -->
