@@ -1,0 +1,21 @@
+[
+    {
+        "codigo": "bh",
+        "nome": "Belo Horizonte",
+        "descricaoCidade": "Capital do estado de Minas Gerais, conhecida por sua culinária e cultura.",
+        "locaisDeColeta": "Locais de coleta disponíveis em Belo Horizonte: Praça da Liberdade, Mercado Central."
+    },
+    {
+        "codigo": "sp",
+        "nome": "São Paulo",
+        "descricaoCidade": "São Paulo é o centro financeiro do Brasil, com uma grande diversidade cultural.",
+        "locaisDeColeta": "Locais de coleta em São Paulo: Avenida Paulista, Parque Ibirapuera."
+    },
+    {
+        "codigo": "rj",
+        "nome": "Rio de Janeiro",
+        "descricaoCidade": "Cidade maravilhosa conhecida pelas praias e pelo carnaval.",
+        "locaisDeColeta": "Locais de coleta no Rio de Janeiro: Copacabana, Maracanã."
+    }
+    
+]

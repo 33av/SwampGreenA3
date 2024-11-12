@@ -1,8 +1,67 @@
-<main>
+<!-- <main>
     <div class="search-itens">
         <p>Um pantano sustentavel</p>
         <input type="text" placeholder="Digite sua cidade ou estado" id="search">
         <p> gera um ogro feliz</p>
     </div>
-    <button type="button" id="Enviar"><img src="" alt="" class="img-button"></button>
+    <button type="button" id="Enviar"><img src="../../assets/img/recicla1.png" alt="" class="img-button"></button>
+</main> -->
+<!-- <section class="container ">
+    <div class="map">
+        <img src="../../assets/img/testeMapa.png" alt="mapaErro">
+    </div>
+    <div class="text-iten">
+        <h2 class="title">Belo Horizonte</h2>
+        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reprehenderit nesciunt
+            eligendi
+            minima consequatur maxime ad corporis, fugiat incidunt atque laborum ut aspernatur illum dolorum iusto
+            aperiam
+            cumque. Eaque, sit!
+            Lorem.</p>
+    </div>
+    <div>
+        <p class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing es soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum similique ad magni, voluptas quibusdam sint rem labore facilis nesciunt totam placeat officia exercitationem nostrum repellendus amet temporibus id architecto. sint vero minim?Lorem ipsum, dolor sit 
+         </p>
+         <div class="button-container">
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+        </div>
+    </div>
+    
+</section> -->
+<main>
+    <div class="search-itens">
+        <p>Um pantano sustentavel</p>
+        <input type="text" placeholder="Digite sua cidade ou estado" id="search" [(ngModel)]="cidadeInput">
+        <p> gera um ogro feliz</p>
+    </div>
+    <button type="button" id="Enviar" (click)="buscarCidade()"><img src="../../assets/img/recicla1.png" alt="" class="img-button"></button>
 </main>
+
+<section class="container" *ngIf="cidadeSelecionada">
+    <div class="map">
+        <img src="../../assets/img/testeMapa.png" alt="mapaErro">
+    </div>
+    <div class="text-iten">
+        <h2 class="title">{{ cidadeSelecionada?.nome }}</h2>
+        <p class="text">{{ cidadeSelecionada?.descricaoCidade }}</p>
+    </div>
+    <div>
+        <p class="text">
+            {{ cidadeSelecionada?.locaisDeColeta }}
+        </p>
+        <div class="button-container">
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+            <button class="btn-action">teste</button>
+        </div>
+    </div>
+</section>
