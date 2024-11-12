@@ -2,7 +2,8 @@
   <section class="intro">
     <h2>Bem-vindo ao Pântano da Reciclagem!</h2>
     <p>
-      Aqui acreditamos que cada ação sustentável faz a diferença. Reciclar é mais do que uma escolha é um compromisso com o futuro do planeta.
+      Aqui acreditamos que cada ação sustentável faz a diferença. Reciclar é
+      mais do que uma escolha é um compromisso com o futuro do planeta.
     </p>
   </section>
   <section class="search">
@@ -12,8 +13,18 @@
       id="search-bar"
       placeholder="Digite sua cidade ou estado"
     />
-    <button onclick="searchRecyclingCenters()">Buscar</button>
+    <!-- Atualize para usar o binding Angular (click) -->
+    <button (click)="searchRecyclingCenters()">Buscar</button>
   </section>
 </main>
 
-<iframe class="mapa" src="https://www.google.com/maps/embed/v1/search?q=reciclagem&key=AIzaSyAAuLSTzzDya-CXz41pT_ST2RQww9imIuA" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe
+  class="mapa"
+  [src]="linkMapsCompleto"
+  width="1900"
+  height="600"
+  style="border: 0"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>
