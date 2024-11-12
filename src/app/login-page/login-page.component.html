@@ -9,21 +9,34 @@
             <h2>Crie sua conta</h2>
             <div class="form-group">
                 <img src="../../assets/img/login-icon.png" alt="User Icon">
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" [(ngModel)]="name">
             </div>
             <div class="form-group">
                 <img src="../../assets/img/email-icon.svg" alt="Email Icon">
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" [(ngModel)]="email">
             </div>
             <div class="form-group">
                 <img src="../../assets/img/senhaicon.svg" alt="Password Icon">
-                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Senha" [(ngModel)]="password" [type]="showPassword ? 'text' : 'password'">
+                <img src="../../assets/img/olho-para-senhas.png" (click)="togglePasswordVisibility()" alt="Mostrar Senha" class="toggle-password">
             </div>
-            <button class="register-button">Cadastrar</button>
+            <div class="form-group">
+                <img src="../../assets/img/senhaicon.svg" alt="Password Icon">
+                <input type="password" placeholder="Confirme a Senha" [(ngModel)]="confirmPassword" [type]="showConfirmPassword ? 'text' : 'password'">
+                <img src="../../assets/img/olho-para-senhas.png" (click)="toggleConfirmPasswordVisibility()" alt="Mostrar Senha" class="toggle-password">
+            </div>
+
+            <!-- Novo campo para CPF -->
+            <div class="form-group">
+                <img src="../../assets/img/cpf-icon.png" alt="CPF Icon"> <!-- Coloque o ícone correspondente ao CPF -->
+                <input type="text" placeholder="CPF" inputmode="numeric" maxlength="14" [(ngModel)]="cpf" (input)="formatCPF()" (keydown)="allowOnlyNumbers($event)" >
+            </div>
+
+            <button class="register-button" (click)="validateForm()">Cadastrar</button>
         </div>
     </div>
     <a href="/" class="return">
         &lt;&lt;&lt;
         <span class="text-return">Voltar</span>
-      </a>
+    </a>
 </main>
