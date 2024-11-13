@@ -1,153 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilização principal do main */
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70%;
-
-}
-#Enviar .img-button{
-    cursor: pointer;
-    transition: transform 0.9s ease-out;
-}
-/* #Enviar:active .img-button ,
-#Enviar:hover .img-button {
-    transform: scale(1.2);
-} */
-@keyframes rotation {
-    from {
-        transform: rotate(0deg) scale(1.2);
-    }
-    to {
-        transform: rotate(360deg) scale(1.2);
-    }
-}
-#Enviar:hover .img-button {
-    animation: rotation 3s linear infinite; 
+  color: #3B2D1F;
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Limita a largura total */
+  max-height: 300px; /* Limita a altura total */
+  margin: auto;
+  padding: 10px; /* Reduz o padding geral */
+  gap: 5px; /* Diminui o espaçamento entre os elementos */
 }
 
-.search-itens {
-    text-align: center;
+/* Seção de introdução */
+.intro {
+  padding: 15px; /* Reduz o padding interno */
+  text-align: center;
+  background: #8CB04E;
+  color: #3B2D1F;
+  border-radius: 15px;
+  margin: 5px 0; /* Reduz o espaçamento vertical */
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.search-itens p {
-    color: #8CB04E;
-    font-size: 18px;
+/* Seção de pesquisa */
+.search {
+  text-align: center;
+  padding: 15px; /* Reduz o padding interno */
+  background: #E8FFB5;
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  margin: 5px 0; /* Reduz o espaçamento vertical */
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#search {
-    width: 350px;
-    height: 50px;
-    border-radius: 15px;
-    border: 2px solid #5C452D;
-    background: #E1DFB6;
-    padding-left: 10px;
-    margin: 5px;
+#search-bar { /* Campo de entrada de pesquisa */
+  width: 70%;
+  padding: 10px; /* Diminui o padding do campo */
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
 }
 
-textarea::placeholder {
-    opacity: 0.5;
+button { /* Botão de pesquisa */
+  background-color: #5C452D;
+  color: #E8FFB5;
+  padding: 10px 20px; /* Diminui o padding do botão */
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
 }
 
-input::placeholder {
-    opacity: 0.5;
+button:hover { /* Animação ao passar mouse */
+  background-color: #8CB04E;
 }
 
-#Enviar {
-    width: 80px;
-    height: 50px;
-    border-radius: 15px;
-    border: 2px solid #5C452D;
-    background: #8CB04E;
-}
-
-/* Estilo para a div principal */
-.container {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: start;
-    /* grid-template-columns: 50% 50%; 
-    grid-template-rows: 60% 40%; */
-    grid-template-columns: auto auto;
-    gap: 1vw;
-    grid-template-rows: 20vw min-content;
-    margin-left: 15px;
-    width: 70vw;
-    margin: auto;
-}
-
-/* Estilo para a div do título */
-.title {
-    margin: 20px;
-    font-size: clamp(12px, 0.5vw + 1.7rem, 50px);
-    font-weight: bold;
-    text-align: left;
-    color: black;
-    font-family: Shrek;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Estilo para a div do texto */
-.text {
-    text-align: justify;
-    /* Justifica o texto */
-    line-height: 1.6;
-    font-size: clamp(12px, 0.5vw + 0.7rem, 50px);
-    margin: 10px;
-    color: #000;
-    font-family: Roboto;
-    font-weight: 200;
-    line-height: normal;
-    text-align: justify;
-}
-
-/* Estilo para a div do mapa */
-.map {
-    width: 33vw;
-    background-color: #5C452D;
-    overflow: hidden;
-    /* Evita que a imagem extrapole a div */
-    position: relative;
-    /* Necessário para alinhar a imagem corretamente */
-}
-
-.map img {
-    width: 100%;
-    height: auto;
-    /* Mantém a proporção da imagem */
-    display: block;
-    /* Remove espaço extra abaixo da imagem */
-}
-
-/* Estilo para a div dos botões */
-.button-container {
-    display: grid;
-    grid-template-columns: min-content min-content min-content;
-    grid-template-rows: min-content min-content;
-}
-
-/* Estilo individual para os botões */
-.btn-action {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #d3e4cd;
-    border: 1px solid #a2b79d;
-    border-radius: 5px;
-    text-align: center;
-    width: 8vw;
-    height: 8vw;
-    margin: 1vw;
-    border-radius: 5.689px;
-    border: 4px solid #5C452D;
-    background: #8CB04E;
-    color: #C5EE7D;
-    text-align: center;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.btn-action:hover {
-    color: #C5EE7D;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px #E1DFB6, 0 0 20px #E1DFB6, 0 0 30px #E1DFB6;
+.mapa {
+  text-align: center;
+  padding: 15px;
+  background: #E8FFB5;
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  margin-left: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }

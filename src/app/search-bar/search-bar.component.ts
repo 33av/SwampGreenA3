@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, FormsModule],
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
+  styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
   cidadeInput: string = '';

@@ -97,8 +97,10 @@ body {
     align-items: center;
     margin-bottom: 20px;
     border: 1px solid #5C452D;
+    border-radius: 8px;
     padding: 10px;
     background-color: #e4f5b2;
+
 }
 
 .form-group img {
@@ -113,6 +115,14 @@ body {
     flex: 1;
     font-family: 'Roboto', Bold;
 }
+
+.toggle-password{
+cursor:pointer;
+
+}
+
+
+
 
 .register-button {
     width: 100%;
@@ -180,4 +190,5 @@ body {
 .return:hover .text-return {
     visibility: visible;
     opacity: 1;
-} */
+}
+

@@ -12,7 +12,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { TextInfoComponent } from './text-info/text-info.component';
-import { TipsPageComponent } from './tips-page/tips-page.component';
+import { TasksComponent } from './tasks/tasks.component';
 import { AwardsPageComponent } from './awards-page/awards-page.component';
 import { DonationsPageComponent } from './donations-page/donations-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -22,8 +22,8 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 export const routes: Routes = [
     { path: 'home', component: SearchBarComponent },
     { path: 'about', component: TextInfoComponent },
-    { path: 'tips', component: TipsPageComponent },
-    { path: 'awards', component: AwardsPageComponent },
+    { path: 'tasks', component: TasksComponent },
+    { path: 'awards', component: AwardsPageComponent, canActivate:[AuthGuard] },
     { path: 'donations', component: DonationsPageComponent },
     { path: 'login', component: LoginPageComponent },
     { path: 'signup', component: SignUpPageComponent}
