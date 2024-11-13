@@ -6,7 +6,7 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 95% 7%;
+    grid-template-columns: 92% 2%;
     justify-content: center;
     background-color: #5C452D;
     color: #8CB04E;
