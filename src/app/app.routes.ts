@@ -1,12 +1,3 @@
-// import { Routes } from '@angular/router';
-// import { TextInfoComponent } from './text-info/text-info.component';
-// import { SearchBarComponent } from './search-bar/search-bar.component';
-
-
-// export const routes: Routes = [
-//     { path: 'home', component: SearchBarComponent },
-//     { path: 'about', component: TextInfoComponent },
-// ];
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -21,13 +12,16 @@ import { AuthGuard } from '../app/auth/auth.guard';
 
 // Definição das rotas
 export const routes: Routes = [
-    { path: 'home', component: SearchBarComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: SearchBarComponent},
     { path: 'about', component: TextInfoComponent },
     { path: 'tasks', component: TasksComponent },
-    { path: 'awards', component: AwardsPageComponent, canActivate:[AuthGuard] },
+    { path: 'awards', component: AwardsPageComponent, canActivate: [AuthGuard] },
     { path: 'donations', component: DonationsPageComponent },
-    { path: 'login', component: LoginPageComponent }
+    { path: 'login', component: LoginPageComponent },
+    
 ];
+
 
 // Módulo de Roteamento
 @NgModule({

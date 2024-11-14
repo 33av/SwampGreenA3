@@ -15,6 +15,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']  // Corrigido de styleUrl para styleUrls
 })
 export class AppComponent {
-  title = 'SwampA3angular';
+  title = 'Swamp Green';
   constructor(public router: Router) {}
 }

@@ -63,15 +63,15 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
+  cursor: pointer;
 
   }
   
   .user-profile {
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaço entre imagem e nome */
-    
+    gap: 10px; /* Espaço entre imagem e nome */
+    margin-left: -55px;
   }
   
   .profile-image {
@@ -80,6 +80,7 @@ li {
     border-radius: 50%; /* Torna a imagem circular */
     object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorções */
     border: 2px solid #ccc; /* Borda opcional */
+    
   }
   
   .user-name {
@@ -102,7 +103,9 @@ li {
     color: #fff;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    
+
+
   }
   
   .login-button:hover {

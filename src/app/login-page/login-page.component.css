@@ -62,7 +62,7 @@ body {
     border-style: solid;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
+    
     font-weight: bold;
     width: 90%;
     color: #5C452D;
@@ -115,10 +115,6 @@ body {
     font-family: 'Roboto', Bold;
 }
 
-.toggle-password{
-cursor:pointer;
-
-}
 
 
 
@@ -131,7 +127,7 @@ cursor:pointer;
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
+    
     margin-top: 10px;
 }
 
