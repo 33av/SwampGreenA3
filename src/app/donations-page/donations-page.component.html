@@ -1,2 +1,52 @@
-<img src="assets/img/download.jpg" alt="cat">
-<h2>cat brabo</h2>
+<section>
+    <div class="text-container">
+        <h2 class="text-title"> Faca Uma Doacao </h2>
+        <p class="paragraph"> Gostaria de doar um valor, seja ele qual for diretamente para uma instituição de caridade
+            responsável e segura ? Verifique abaixo as opções disponiveis e faça a diferença ! Sua ajuda pode mudar a vida de alguem.
+        </p>
+    </div>
+</section>
+
+
+<!-- Caixa de seleção para instituições -->
+<div class="dropdown">
+    <button class="dropdown-button" (click)="toggleDropdown()">
+      Escolha uma Instituicao
+    </button>
+    <ul *ngIf="isDropdownOpen" class="dropdown-list">
+      <li *ngFor="let instituicao of instituicoes" (click)="selectInstituicao(instituicao)">
+        {{ instituicao }}
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Exibir a instituição selecionada -->
+  <div *ngIf="selectedInstituicao">
+    <h3>Voce vai doar para   {{ selectedInstituicao }}</h3>
+    
+    <!-- Campo para inserir o valor da doação -->
+    <div>
+      <label for="doacaoValor">Valor da doacao :</label>
+      <input 
+        id="doacaoValor" 
+        type="number" 
+        [(ngModel)]="doacaoValor" 
+        min="1" 
+        placeholder="Digite o valor"
+      />
+    </div>
+  
+    <!-- Botão para fazer a doação -->
+    <button *ngIf="doacaoValor !== null && doacaoValor > 0" class="doacao-button" (click)="fazerDoacao()">
+        Fazer Doacao
+      </button>
+  
+  <!-- Popup de confirmação -->
+  <div *ngIf="isPopupVisible" class="popup">
+    <div class="popup-content">
+      <h4>Confirmacao de Doacao</h4>
+      <p>Voce deseja doar R${{ doacaoValor }} para a instituicao {{ selectedInstituicao }}?</p>
+      <button (click)="confirmarDoacao()">Confirmar</button>
+      <button (click)="cancelarDoacao()">Cancelar</button>
+    </div>
+  </div>

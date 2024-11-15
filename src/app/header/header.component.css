@@ -14,7 +14,7 @@
     font-size: 20px;
     width: 100dvw;
     margin-bottom: 40px;
-
+    position: relative;
 }
 
 .sub-titulos {
@@ -74,15 +74,35 @@ li {
     margin-left: -55px;
   }
   
+  
   .profile-image {
     width: 50px; /* Ajuste o tamanho conforme desejado */
     height: 50px;
     border-radius: 50%; /* Torna a imagem circular */
     object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorções */
     border: 2px solid #ccc; /* Borda opcional */
-    
   }
   
+  .logout-button {
+    position: absolute; /* Faz o botão ser posicionado em relação ao seu contêiner pai */
+    bottom: 0; /* Alinha o botão na parte inferior */
+    right: 0; /* Alinha o botão na parte direita */
+    margin: 10px; /* Adiciona um pequeno espaçamento das bordas */
+    padding: 4px 10px;
+    background-color: #ff5b4f; /* Cor do botão de logout */
+    color: #C5EE7D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Alteração na cor ao passar o mouse sobre o botão de logout */
+.logout-button:hover {
+    background-color: #e53935; /* Cor do botão de logout ao passar o mouse */
+}
+
+
+
   .user-name {
     font-size: 16px; /* Tamanho do texto do nome */
     color: #ffffff; /* Cor do nome */
@@ -104,8 +124,6 @@ li {
     border: none;
     border-radius: 4px;
     
-
-
   }
   
   .login-button:hover {

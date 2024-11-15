@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from '../auth/auth.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login-page',
@@ -18,11 +20,15 @@ export class LoginPageComponent {
   showPassword: boolean = false;
   showConfirmPassword: boolean = false;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
+  
+
+
 
   storeCredentials() {
     // Aqui você chama o AuthService para armazenar as credenciais
     this.authService.storeCredentials(this.email, this.password, this.name);
+    this.router.navigate(['/home']);
   }
 
   togglePasswordVisibility() {
@@ -66,6 +72,8 @@ export class LoginPageComponent {
       alert('O campo de CPF não pode estar vazio.');
     } else {
       this.validateCPF();
+      
+
     }
   }
 

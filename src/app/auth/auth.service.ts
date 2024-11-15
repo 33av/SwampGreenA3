@@ -28,6 +28,8 @@ setLoggedInUser(name: string) {
 
 clearLoggedInUser() {
   localStorage.removeItem('loggedInUser');
+  localStorage.removeItem('password');
+  localStorage.removeItem('userName');
 }
 
 getLoggedInUser(): string | null {
