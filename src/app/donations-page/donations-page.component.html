@@ -8,6 +8,9 @@
 </section>
 
 
+
+<div class="doacaoGeral">
+
 <!-- Caixa de seleção para instituições -->
 <div class="dropdown">
     <button class="dropdown-button" (click)="toggleDropdown()">
@@ -46,7 +49,11 @@
     <div class="popup-content">
       <h4>Confirmacao de Doacao</h4>
       <p>Voce deseja doar R${{ doacaoValor }} para a instituicao {{ selectedInstituicao }}?</p>
-      <button (click)="confirmarDoacao()">Confirmar</button>
-      <button (click)="cancelarDoacao()">Cancelar</button>
+      <button class ="botoesFinais" (click)="cancelarDoacao()">Cancelar</button>
+      <button class ="botoesFinais" (click)="confirmarDoacao()">Confirmar</button>
     </div>
   </div>
+
+</div>
+
+</div>

@@ -63,7 +63,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  cursor: pointer;
+  
 
   }
   
@@ -93,7 +93,7 @@ li {
     color: #C5EE7D;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    
 }
 
 /* Alteração na cor ao passar o mouse sobre o botão de logout */

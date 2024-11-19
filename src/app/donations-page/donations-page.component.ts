@@ -55,6 +55,7 @@ export class DonationsPageComponent {
   // Função para cancelar a doação
   cancelarDoacao(): void {
     this.isPopupVisible = false; // Fecha o popup
+    alert(' Você cancelou sua doação, 3 burros órfãos acabaram de partir pro além . ')
   }
 
   // Função para resetar a doação
