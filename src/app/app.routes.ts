@@ -16,11 +16,12 @@ import { TasksComponent } from './tasks/tasks.component';
 import { AwardsPageComponent } from './awards-page/awards-page.component';
 import { DonationsPageComponent } from './donations-page/donations-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { AuthGuard } from '../app/auth/auth.guard';
+// import { AuthGuard } from '../app/auth/auth.guard';
 
 
 // Definição das rotas
 export const routes: Routes = [
+    { path: '', component: SearchBarComponent },
     { path: 'home', component: SearchBarComponent },
     { path: 'about', component: TextInfoComponent },
     { path: 'tasks', component: TasksComponent },

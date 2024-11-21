@@ -1,19 +1,19 @@
 <main>
     <div class="ranking">
-        <div class="top-ranking 2">
+        <div class="top-ranking-2">
           <img src="../../assets/img/segundoLugar.png" alt="">
-          <p class="perfil-user">Gabriel</p>
-          <h3 class="points">1000pts</h3>
+          <p class="perfil-user">{{ dataSource[1].name }}</p>
+          <h3 class="points">{{ dataSource[1].ranking }} pts</h3>
         </div>
-        <div class="top-ranking 1">
+        <div class="top-ranking-1">
           <img src="../../assets/img/Trofeu.png" alt="">
-          <p class="perfil-user">Gabriel</p>
-          <h3 class="points">1000pts</h3>
+          <p class="perfil-user">{{ dataSource[0].name }}</p>
+          <h3 class="points">{{ dataSource[0].ranking }} pts</h3>
         </div>
-        <div class="top-ranking 3">
+        <div class="top-ranking-3">
           <img src="../../assets/img/terceiroLugar.png" alt="">
-          <p class="perfil-user">Gabriel</p>
-          <h3 class="points">1000pts</h3>
+          <p class="perfil-user">{{ dataSource[2].name }}</p>
+          <h3 class="points">{{ dataSource[2].ranking }} pts</h3>
         </div>
     </div>
     <div class="container-table"> 
@@ -47,7 +47,20 @@
           
           
     </div>
-    
+    <div class="container-awards">
+      <section class="awards">
+      <div class="card"><img src="../../assets/img/premios/casa.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/shrek.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/burro.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/caminhao.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/whey.png" alt=""><p class="value">10 Coins</p></div>
+      </section>
+      <div class="btn-actions">
+        <button class="atcion">Girar Roleta 10Coins</button>
+        <button class="atcion">Comprar Item Selecionado</button>
+        <button class="atcion">Adiquirir Mais Moedas</button>
+      </div>
+    </div>
 
 
 </main>
