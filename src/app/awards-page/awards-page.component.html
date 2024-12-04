@@ -1,1 +1,81 @@
-<p>awards-page works!</p>
+<main>
+    <div class="ranking">
+        <div class="top-ranking-2">
+          <img src="../../assets/img/segundoLugar.png" alt="">
+          <p class="perfil-user">{{ dataSource[1].name }}</p>
+          <h3 class="points">{{ dataSource[1].ranking }} pts</h3>
+        </div>
+        <div class="top-ranking-1">
+          <img src="../../assets/img/Trofeu.png" alt="">
+          <p class="perfil-user">{{ dataSource[0].name }}</p>
+          <h3 class="points">{{ dataSource[0].ranking }} pts</h3>
+        </div>
+        <div class="top-ranking-3">
+          <img src="../../assets/img/terceiroLugar.png" alt="">
+          <p class="perfil-user">{{ dataSource[2].name }}</p>
+          <h3 class="points">{{ dataSource[2].ranking }} pts</h3>
+        </div>
+    </div>
+    <div class="container-table"> 
+        <table mat-table [dataSource]="dataSource" class="table-ranking">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef> Score </th>
+              <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Username </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="ranking">
+              <th mat-header-cell *matHeaderCellDef> Ranking </th>
+              <td mat-cell *matCellDef="let element"> {{element.ranking}} </td>
+            </ng-container>
+          
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+          
+          
+    </div>
+    <div class="container-awards">
+      <section class="awards">
+      <div class="card"><img src="../../assets/img/premios/casa.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/shrek.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/burro.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/caminhao.png" alt=""><p class="value">10 Coins</p></div>
+      <div class="card"><img src="../../assets/img/premios/whey.png" alt=""><p class="value">10 Coins</p></div>
+      </section>
+      <section class="action-itens">
+      <a class="return previous">
+        &lt;&lt;&lt;
+        <span class="text-return"> Previous Item</span>
+    </a>
+    <nav class="return selected">
+     -----------------
+    </nav>
+    <a class="return next">
+      &gt;&gt;&gt;
+      <span class="text-return">Next Item</span>
+  </a>
+</section>
+      <div class="btn-actions">
+          <button class="action"><nav>Girar Roleta</nav><nav class="value">10 Coins</nav></button>
+          <button class="action"><nav>Comprar Item Selecionado</nav></button>
+        <a href="/get-coins">
+          <button class="action">Adiquirir Mais Moedas</button>
+        </a>
+      </div>
+    </div>
+
+
+</main>

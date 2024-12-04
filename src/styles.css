@@ -1,11 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+ /* You can add global styles to this file, and also import other style files */
 * {
     font-family: 'Shrek';
     margin: 0;
     padding: 0;
     letter-spacing: 0.8px;
-
+    box-sizing: border-box;
+    text-decoration: none;
 }
+a:visited {
+    color: inherit;  /* Mantém a cor do link igual à cor normal, ou defina uma cor específica */
+    text-decoration: none;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  img, div {
+    max-width: 100%;
+    height: auto;
+  }
 
 body {
     background-color: #C5EE7D;
@@ -63,7 +78,7 @@ main {
     display: none;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .erro404 {
         display: block;
         width: 100vw;
@@ -75,4 +90,4 @@ main {
     app-root{
         display: none;
     }
-}
+} */

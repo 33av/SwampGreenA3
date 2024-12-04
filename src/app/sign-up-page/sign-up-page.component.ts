@@ -4,13 +4,13 @@ import { AuthService } from '../auth/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-sign-up-page',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css','../sign-up-page/sign-up-page.component.css']
+  templateUrl: './sign-up-page.component.html',
+  styleUrls: ['./sign-up-page.component.css', '../login-page/login-page.component.css']
 })
-export class LoginPageComponent {
+export class SignUpPageComponent {
   name: string = '';
   email: string = '';
   password: string = '';
@@ -113,6 +113,6 @@ export class LoginPageComponent {
 
   // Método para navegar para a página de login
   navigateToDestino() {
-    this.router.navigate(['/signup']);
+    this.router.navigate(['/login']);
   }
 }

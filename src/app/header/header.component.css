@@ -6,13 +6,12 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 95% 7%;
+    grid-template-columns: 92vw 7vw;
     justify-content: center;
     background-color: #5C452D;
     color: #8CB04E;
     font-family: Shrek;
     font-size: 20px;
-    width: 100dvw;
     margin-bottom: 40px;
 
 }
@@ -60,7 +59,7 @@ li {
 }
 
 .login {
-    height: 7vh;
+    height: 2.5rem;
     display: flex;
 }
 
@@ -73,10 +72,9 @@ li {
 }
 
 .login-icon {
-    max-height: 100%;
-    height: auto;
+    height: 100%;
     width: auto;
-    margin-bottom: 5px;
+    margin: 8px;
 }
 
 .login-button {
@@ -95,9 +93,9 @@ li {
     padding: 5px;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .header-container {
         display: none;
     }
 
-}
+} */
