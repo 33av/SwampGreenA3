@@ -6,13 +6,12 @@
 
 .header-container {
     display: grid;
-    grid-template-columns: 92% 2%;
+    grid-template-columns: 92vw 7vw;
     justify-content: center;
     background-color: #5C452D;
     color: #8CB04E;
     font-family: Shrek;
     font-size: 20px;
-    width: 100dvw;
     margin-bottom: 40px;
 
 }
