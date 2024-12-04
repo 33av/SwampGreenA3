@@ -17,6 +17,7 @@ export const routes: Routes = [
     { path: 'about', component: TextInfoComponent },
     { path: 'tasks', component: TasksComponent },
     { path: 'awards', component: AwardsPageComponent, canActivate: [AuthGuard] },
+
     { path: 'donations', component: DonationsPageComponent },
     { path: 'login', component: LoginPageComponent },
     
