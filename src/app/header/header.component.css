@@ -60,40 +60,59 @@ li {
 }
 
 .login {
-    height: 7vh;
-    display: flex;
-}
-
-.login a {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100%;
-    text-decoration: none;
-}
-
-.login-icon {
-    max-height: 100%;
-    height: auto;
-    width: auto;
-    margin-bottom: 5px;
-}
-
-.login-button {
-    flex: 1;
-    cursor: pointer;
-    background-color: #7A9244;
-    color: #C5EE7D;
-    border: none;
-    padding: 0;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 9px;
-    color: #C5EE7D;
-    padding: 5px;
-}
+    justify-content: flex-start;
+  cursor: pointer;
+
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre imagem e nome */
+    margin-left: -55px;
+  }
+  
+  .profile-image {
+    width: 50px; /* Ajuste o tamanho conforme desejado */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorções */
+    border: 2px solid #ccc; /* Borda opcional */
+    
+  }
+  
+  .user-name {
+    font-size: 16px; /* Tamanho do texto do nome */
+    color: #ffffff; /* Cor do nome */
+    font-weight: bold; /* Negrito para destaque */
+    
+  }
+  
+  .login-icon {
+    width: 62px; /* Ajuste o tamanho do ícone */
+    margin-right: 8px; /* Espaço entre ícone e botão */
+    
+  }
+  
+  .login-button {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #4CAF50; /* Cor do botão */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    
+
+
+  }
+  
+  .login-button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+  }
+
+
 
 @media (max-width: 900px) {
     .header-container {

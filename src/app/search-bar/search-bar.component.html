@@ -1,8 +1,30 @@
 <main>
-    <div class="search-itens">
-        <p>Um pantano sustentavel</p>
-        <input type="text" placeholder="Digite sua cidade ou estado" id="search">
-        <p> gera um ogro feliz</p>
-    </div>
-    <button type="button" id="Enviar"><img src="" alt="" class="img-button"></button>
+  <section class="intro">
+    <h2>Bem-vindo ao Pântano da Reciclagem!</h2>
+    <p>
+      Aqui acreditamos que cada ação sustentável faz a diferença. Reciclar é
+      mais do que uma escolha é um compromisso com o futuro do planeta.
+    </p>
+  </section>
+  <section class="search">
+    <h3>Encontre locais de reciclagem:</h3>
+    <input
+      type="text"
+      id="search-bar"
+      placeholder="Digite sua cidade ou estado"
+    />
+    <!-- Atualize para usar o binding Angular (click) -->
+    <button (click)="searchRecyclingCenters()">Buscar</button>
+  </section>
 </main>
+
+<iframe
+  class="mapa"
+  [src]="linkMapsCompleto"
+  width="95%"
+  height="50%"
+  style="border: 0"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>

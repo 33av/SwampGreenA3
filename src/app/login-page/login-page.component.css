@@ -62,7 +62,7 @@ body {
     border-style: solid;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
+    
     font-weight: bold;
     width: 90%;
     color: #5C452D;
@@ -96,8 +96,10 @@ body {
     align-items: center;
     margin-bottom: 20px;
     border: 1px solid #5C452D;
+    border-radius: 8px;
     padding: 10px;
     background-color: #e4f5b2;
+
 }
 
 .form-group img {
@@ -113,6 +115,10 @@ body {
     font-family: 'Roboto', Bold;
 }
 
+
+
+
+
 .register-button {
     width: 100%;
     padding: 10px;
@@ -121,7 +127,7 @@ body {
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
+    
     margin-top: 10px;
 }
 
@@ -180,3 +186,4 @@ body {
     visibility: visible;
     opacity: 1;
 }
+

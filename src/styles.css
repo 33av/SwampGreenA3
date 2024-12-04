@@ -13,7 +13,15 @@ body {
     width: 100vw;
     margin: 0px;
     display: block;
+    cursor: url('assets/img/shrek-cursor.png') ,auto;
+    overflow-x: hidden;
 }
+
+button, a, toggle-password {
+    cursor: url('assets/img/shrek-pointer.png'), pointer; /* ou qualquer estilo de cursor desejado */
+}
+
+
 
 @font-face {
     font-family: 'Shrek';

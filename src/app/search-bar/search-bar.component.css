@@ -1,37 +1,79 @@
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70%;
-    
-}
-.search-itens{
-    text-align: center;
-}
-p{
-    color: #8CB04E;
-font-size: 18px;
-}
-#search {
-    width: 350px;
-    height: 50px;
-    border-radius: 15px;
-    border: 2px solid #5C452D;
-    background: #E1DFB6;
-    padding-left: 10px;
-    margin: 5px;
-}
-textarea::placeholder { 
-    opacity: 0.5;
-}
-input::placeholder{
-    opacity: 0.5;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-#Enviar {
-    width: 80px;
-    height: 50px;
-    border-radius: 15px;
-    border: 2px solid #5C452D;
-    background: #8CB04E;
+/* Estilização principal do main */
+main {
+  color: #3B2D1F;
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Limita a largura total */
+  max-height: 300px; /* Limita a altura total */
+  margin: auto;
+  padding: 10px; /* Reduz o padding geral */
+  gap: 5px; /* Diminui o espaçamento entre os elementos */
+}
+
+/* Seção de introdução */
+.intro {
+  padding: 15px; /* Reduz o padding interno */
+  text-align: center;
+  background: #8CB04E;
+  color: #3B2D1F;
+  border-radius: 15px;
+  margin: 5px 0; /* Reduz o espaçamento vertical */
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de pesquisa */
+.search {
+  text-align: center;
+  padding: 15px; /* Reduz o padding interno */
+  background: #E8FFB5;
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  margin: 5px 0; /* Reduz o espaçamento vertical */
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-bar { /* Campo de entrada de pesquisa */
+  width: 70%;
+  padding: 10px; /* Diminui o padding do campo */
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+button { /* Botão de pesquisa */
+  background-color: #5C452D;
+  color: #E8FFB5;
+  padding: 10px 20px; /* Diminui o padding do botão */
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover { /* Animação ao passar mouse */
+  background-color: #8CB04E;
+}
+
+.mapa {
+  text-align: center;
+  padding: 15px;
+  background: #E8FFB5;
+  border: 2px solid #5C452D;
+  border-radius: 15px;
+  margin-left: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
