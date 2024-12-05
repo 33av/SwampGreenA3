@@ -15,3 +15,11 @@ img {
 .img-esquerda{
     flex-direction: row-reverse;
 }
+
+@media (max-width: 660px) {
+
+  .img {
+    display: none; /* Esconde a seção para dispositivos menores */
+  }
+}
+
