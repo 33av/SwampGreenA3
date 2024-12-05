@@ -25,11 +25,11 @@
   
   <!-- Exibir a instituição selecionada -->
   <div *ngIf="selectedInstituicao">
-    <h3>Voce vai doar para   {{ selectedInstituicao }}</h3>
+    <h3>Are You Donating To{{ selectedInstituicao }}</h3>
     
     <!-- Campo para inserir o valor da doação -->
     <div>
-      <label for="doacaoValor">Valor da doacao :</label>
+      <label for="doacaoValor">Donation value</label>
       <input 
         id="doacaoValor" 
         type="number" 
@@ -47,10 +47,10 @@
   <!-- Popup de confirmação -->
   <div *ngIf="isPopupVisible" class="popup">
     <div class="popup-content">
-      <h4>Confirmacao de Doacao</h4>
-      <p>Voce deseja doar R${{ doacaoValor }} para a instituicao {{ selectedInstituicao }}?</p>
-      <button class ="botoesFinais" (click)="cancelarDoacao()">Cancelar</button>
-      <button class ="botoesFinais" (click)="confirmarDoacao()">Confirmar</button>
+      <h4>Donation Confirmation</h4>
+      <p class="text-confirm">Voce esta doando R${{ doacaoValor }} para a instituicão {{ selectedInstituicao }}</p>
+      <button class ="btn-actions cancel" (click)="cancelarDoacao()">Cancel</button>
+      <button class ="btn-actions confirm" (click)="confirmarDoacao()">Confirm</button>
     </div>
   </div>
 
