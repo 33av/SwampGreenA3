@@ -129,7 +129,7 @@ li {
   }
 
   .sub-titulos li {
-      font-size: 40px; /* Tamanho do emoji */
+      font-size: 50px; /* Tamanho do emoji */
       text-align: center;
       flex: 1; /* Garante que cada item ocupe o mesmo espaço */
       margin: 0px; /* Espaçamento entre os blocos */
@@ -160,7 +160,7 @@ li {
   }
 
   .sub-titulos li {
-      font-size: 30px; /* Tamanho do emoji */
+      font-size: 40px; /* Tamanho do emoji */
       text-align: center;
       flex: 1; /* Garante que cada item ocupe o mesmo espaço */
       margin: 0px; /* Espaçamento entre os blocos */
@@ -192,7 +192,7 @@ li {
   }
 
   .sub-titulos li {
-      font-size: 25px; /* Tamanho do emoji */
+      font-size: 35px; /* Tamanho do emoji */
       text-align: center;
       flex: 1; /* Garante que cada item ocupe o mesmo espaço */
       margin: 0px; /* Espaçamento entre os blocos */
@@ -223,7 +223,7 @@ li {
   }
 
   .sub-titulos li {
-      font-size: 20px; /* Tamanho do emoji */
+      font-size: 29px; /* Tamanho do emoji */
       text-align: center;
       flex: 1; /* Garante que cada item ocupe o mesmo espaço */
       margin: 0px; /* Espaçamento entre os blocos */
