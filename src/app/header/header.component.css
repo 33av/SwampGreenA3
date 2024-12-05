@@ -150,4 +150,132 @@ li {
   }
 }
 
+/* ---- Responsividade abaixo de 409px ---- */
+@media (max-width: 409px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 30px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+
+/* ---- Responsividade abaixo de 349px ---- */
+@media (max-width: 349px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 25px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+/* ---- Responsividade abaixo de 318px ---- */
+@media (max-width: 318px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 20px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+/* ---- Responsividade abaixo de 287px ---- */
+@media (max-width: 287px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 15px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+
+
+
 
