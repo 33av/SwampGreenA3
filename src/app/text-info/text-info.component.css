@@ -3,17 +3,14 @@ section{
     justify-content: center;
     align-items: center;
     /* max-height: 10%; */
-    height: 35vh;
 }
 
 img {
-    /* width: 15%;
-    height: 15%; */
     border-radius: 50px;
     margin-top: 60px;
-} img{
-    max-height: 80%;
+    max-height: 35vh;
     width: auto ;
+    border: 4px solid #5C452D;
 }
 .img-esquerda{
     flex-direction: row-reverse;
