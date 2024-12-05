@@ -93,9 +93,42 @@ li {
     padding: 5px;
 }
 
-/* @media (max-width: 900px) {
-    .header-container {
-        display: none;
-    }
+@media (max-width: 900px) {
+  .header-container {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 10px; /* Reduz o padding */
+  }
 
-} */
+  .sub-titulos {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 50px; /* Ajusta o tamanho da fonte */
+  }
+
+  .sub-titulos li {
+      font-size: 14px;
+      padding: 5px 8px; /* Ajusta o padding */
+  }
+
+  #titulo {
+      font-size: 18px;
+      background-size: 35px; /* Ajusta o tamanho do logo */
+  }
+
+  .login {
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .login-icon {
+      height: 24px;
+  }
+
+  .login-button {
+      font-size: 12px; /* Ajusta o tamanho do texto no botão */
+      padding: 5px 8px; /* Ajusta o padding do botão */
+  }
+}
