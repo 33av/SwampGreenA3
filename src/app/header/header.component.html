@@ -1,28 +1,28 @@
 <div class="header-container">
-    <ul class="sub-titulos">
-        <a href="/home">
-            <li [class.active-link]="isActive('/home')" routerLink="/home">Home</li>
-        </a>
-        <a href="/about">
-            <li [class.active-link]="isActive('/about')" routerLink="/about">About</li>
-        </a>
-        <a href="/tasks">
-            <li [class.active-link]="isActive('/tasks')" routerLink="/tasks">Tips</li>
-        </a>
-        <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
-        <a href="/awards">
-            <li [class.active-link]="isActive('/awards')" routerLink="/awards">Awards</li>
-        </a>
-        <a href="/donations">
-            <li [class.active-link]="isActive('/donations')" routerLink="/donations">Donations</li>
-        </a>
-    </ul>
-    <div class="login">
-        <a href="/signup">
-            <img src="../../assets/img/icons/login-icon.png" alt="Login Image" class="login-icon">
-            <button class="login-button">
-                Login
-            </button>
-        </a>
-    </div>
+  <ul class="sub-titulos">
+      <a href="/home">
+          <li [class.active-link]="isActive('/home')" routerLink="/home" data-emoji="🏠"><span>Home</span></li>
+      </a>
+      <a href="/about">
+          <li [class.active-link]="isActive('/about')" routerLink="/about" data-emoji="ℹ️"><span>About</span></li>
+      </a>
+      <a href="/tasks">
+          <li [class.active-link]="isActive('/tasks')" routerLink="/tasks" data-emoji="💡"><span>Tips</span></li>
+      </a>
+      <h1 id="titulo"><a href="https://www.instagram.com/swamp.green/" target="_blank">Swamp Green</a></h1>
+      <a href="/awards">
+          <li [class.active-link]="isActive('/awards')" routerLink="/awards" data-emoji="🏆"><span>Awards</span></li>
+      </a>
+      <a href="/donations">
+          <li [class.active-link]="isActive('/donations')" routerLink="/donations" data-emoji="💰"><span>Donations</span></li>
+      </a>
+  </ul>
+  <div class="login">
+      <a href="/signup">
+          <img src="../../assets/img/icons/login-icon.png" alt="Login Image" class="login-icon">
+          <button class="login-button">
+              Login
+          </button>
+      </a>
+  </div>
 </div>
