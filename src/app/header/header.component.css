@@ -1,134 +1,281 @@
 * {
-    text-decoration: none;
-    list-style: none;
-    margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header-container {
-    display: grid;
-    grid-template-columns: 92vw 7vw;
-    justify-content: center;
-    background-color: #5C452D;
-    color: #8CB04E;
-    font-family: Shrek;
-    font-size: 20px;
-    margin-bottom: 40px;
-
+  display: grid;
+  grid-template-columns: 92vw 7vw;
+  justify-content: center;
+  background-color: #5C452D;
+  color: #8CB04E;
+  font-family: Shrek;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .sub-titulos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 100%;
-    align-items: flex-end;
-    padding-left: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: flex-end;
+  padding-left: 7%;
 }
 
 li {
-    padding-bottom: 10px;
-    color: #8CB04E;
-
+  padding-bottom: 10px;
+  color: #8CB04E;
 }
 
 #titulo {
-    align-self: flex-start;
-    padding: 20px 0px;
-    background-image: url('../../assets/img/recicla.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90px;
-    margin-bottom: 35px;
-    text-wrap: nowrap;
+  align-self: flex-start;
+  padding: 20px 0px;
+  background-image: url('../../assets/img/recicla.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90px;
+  margin-bottom: 35px;
+  text-wrap: nowrap;
 }
 
 #titulo a:link {
-    color: #8CB04E;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px #E1DFB6;
+  color: #8CB04E;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px #E1DFB6;
 }
 
 #titulo a:visited {
-    color: #8CB04E;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0, #0000 0 10px #E1DFB6;
+  color: #8CB04E;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0, #0000 0 10px #E1DFB6;
 }
 
 .active-link {
-    color: #C5EE7D;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px #E1DFB6, 0 0 20px #E1DFB6, 0 0 30px #E1DFB6;
+  color: #C5EE7D;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px #E1DFB6, 0 0 20px #E1DFB6, 0 0 30px #E1DFB6;
 }
 
 .login {
-    height: 2.5rem;
-    display: flex;
+  height: 2.5rem;
+  display: flex;
 }
 
 .login a {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100%;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  text-decoration: none;
 }
 
 .login-icon {
-    height: 100%;
-    width: auto;
-    margin: 8px;
+  height: 100%;
+  width: auto;
+  margin: 8px;
 }
 
 .login-button {
-    flex: 1;
-    cursor: pointer;
-    background-color: #7A9244;
-    color: #C5EE7D;
-    border: none;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9px;
-    color: #C5EE7D;
-    padding: 5px;
+  flex: 1;
+  cursor: pointer;
+  background-color: #7A9244;
+  color: #C5EE7D;
+  border: none;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  padding: 5px;
 }
 
+/* ---- Responsividade abaixo de 900px ---- */
 @media (max-width: 900px) {
+  #titulo, .login {
+      display: none; /* Esconde o título e o login */
+  }
+
   .header-container {
+      display: flex;
       flex-direction: column;
-      gap: 15px;
-      align-items: flex-start;
-      padding: 10px; /* Reduz o padding */
+      align-items: center;
+      padding: 10px;
   }
 
   .sub-titulos {
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
+      gap: 5px;
       width: 100%;
-      font-size: 50px; /* Ajusta o tamanho da fonte */
   }
 
   .sub-titulos li {
-      font-size: 14px;
-      padding: 5px 8px; /* Ajusta o padding */
-  }
-
-  #titulo {
-      font-size: 18px;
-      background-size: 35px; /* Ajusta o tamanho do logo */
-  }
-
-  .login {
-      justify-content: center;
-      gap: 5px;
-  }
-
-  .login-icon {
-      height: 24px;
-  }
-
-  .login-button {
-      font-size: 12px; /* Ajusta o tamanho do texto no botão */
-      padding: 5px 8px; /* Ajusta o padding do botão */
+      font-size: 16px; /* Ajusta o tamanho da fonte */
+      padding: 5px 10px;
   }
 }
+
+/* ---- Responsividade abaixo de 515px ---- */
+@media (max-width: 515px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 40px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+/* ---- Responsividade abaixo de 409px ---- */
+@media (max-width: 409px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 30px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+
+/* ---- Responsividade abaixo de 349px ---- */
+@media (max-width: 349px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 25px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+/* ---- Responsividade abaixo de 318px ---- */
+@media (max-width: 318px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 20px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+/* ---- Responsividade abaixo de 287px ---- */
+@media (max-width: 287px) {
+  .sub-titulos {
+      display: flex;
+      justify-content: space-between; /* Distribui os itens uniformemente */
+      width: 100%; /* Ocupa a largura total */
+      padding: 0 10px; /* Espaçamento lateral */
+  }
+
+  .sub-titulos li {
+      font-size: 15px; /* Tamanho do emoji */
+      text-align: center;
+      flex: 1; /* Garante que cada item ocupe o mesmo espaço */
+      margin: 0px; /* Espaçamento entre os blocos */
+      background-color: #3d2100; /* Cor de fundo dos blocos */
+      color: #5C452D; /* Cor do texto (emoji) */
+      border-radius: 8px; /* Arredonda as bordas dos blocos */
+      padding: 10px; /* Espaçamento interno no bloco */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .sub-titulos li::before {
+      content: attr(data-emoji); /* Exibe o emoji */
+      display: block;
+  }
+
+  .sub-titulos li span {
+      display: none; /* Oculta o texto */
+  }
+}
+
+
+
+
+
